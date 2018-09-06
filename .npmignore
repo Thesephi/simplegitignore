@@ -1,1 +1,3 @@
-!dist/main.js
+src
+tsconfig.json
+!bin/main.js
