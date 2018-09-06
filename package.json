@@ -1,11 +1,13 @@
 {
-  "name": "gengitignore",
+  "name": "simplegitignore",
   "version": "0.0.1",
-  "description": "generate your boilerplate gitignore",
+  "description": "generate your boilerplate gitignore (i.e. `npx simplegitignore`)",
   "scripts": {
     "start": "./node_modules/ts-node/dist/bin.js src/main.ts",
-    "build": "./node_modules/@babel/cli/bin/babel.js -d dist --extensions \".ts\" src/main.ts"
+    "build": "./node_modules/@babel/cli/bin/babel.js -d dist --extensions \".ts\" src/main.ts",
+    "prepare": "npm run build"
   },
+  "main": "dist/main.js",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
@@ -15,5 +17,6 @@
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },
+  "author": "Khang Dinh (https://kha.ngdinh.com/about-me)",
   "license": "MIT"
 }
