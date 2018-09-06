@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Message for contributors: please KISS
  * Peace!

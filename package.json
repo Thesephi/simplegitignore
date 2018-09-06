@@ -1,13 +1,14 @@
 {
   "name": "simplegitignore",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "generate your boilerplate gitignore (i.e. `npx simplegitignore`)",
   "scripts": {
     "start": "./node_modules/ts-node/dist/bin.js src/main.ts",
-    "build": "./node_modules/@babel/cli/bin/babel.js -d dist --extensions \".ts\" src/main.ts",
+    "build": "./node_modules/@babel/cli/bin/babel.js -d bin --extensions \".ts\" src/main.ts",
     "prepare": "npm run build"
   },
-  "main": "dist/main.js",
+  "main": "bin/main.js",
+  "bin": "bin/main.js",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
