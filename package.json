@@ -1,6 +1,6 @@
 {
   "name": "simplegitignore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "generate your boilerplate gitignore (i.e. `npx simplegitignore`)",
   "scripts": {
     "start": "./node_modules/ts-node/dist/bin.js src/main.ts",
@@ -18,6 +18,12 @@
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },
+  "homepage": "https://github.com/Thesephi/simplegitignore#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thesephi/simplegitignore.git"
+  },
   "author": "Khang Dinh (https://kha.ngdinh.com/about-me)",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["gitignore", "boilerplate", "generator"]
 }
