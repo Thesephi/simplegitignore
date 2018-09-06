@@ -1,0 +1,19 @@
+{
+  "name": "gengitignore",
+  "version": "0.0.1",
+  "description": "generate your boilerplate gitignore",
+  "scripts": {
+    "start": "./node_modules/ts-node/dist/bin.js src/main.ts",
+    "build": "./node_modules/@babel/cli/bin/babel.js -d dist --extensions \".ts\" src/main.ts"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "@types/node": "^10.9.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "license": "MIT"
+}
