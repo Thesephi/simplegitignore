@@ -32,9 +32,12 @@ https.get(sourceFileURI, (res: IncomingMessage): void => {
 
   // step 2: write result to destination file
   res.on("end", (): void => {
-    console.log(`writing ${destinationFile} ...`)
+    console.error("writing .gitignore ...")
     fs.writeFile(destinationFile, data, (err: Error): void =>
-      err ? console.error(err) : console.log("done\n"))
+      err ? console.error(err) : ((): void => {
+        console.error("done")
+        console.log(destinationFile)
+      })())
   })
 
 })
