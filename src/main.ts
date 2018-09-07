@@ -31,10 +31,10 @@ https.get(sourceFileURI, (res: IncomingMessage): void => {
   })
 
   // step 2: write result to destination file
-  res.on("end", () => {
+  res.on("end", (): void => {
     console.log(`writing ${destinationFile} ...`)
     fs.writeFile(destinationFile, data, (err: Error): void =>
-      console.error(err ? err : "done\n"))
+      err ? console.error(err) : console.log("done\n"))
   })
 
 })
