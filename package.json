@@ -1,10 +1,12 @@
 {
   "name": "simplegitignore",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "generate your boilerplate gitignore the dead simple way (`npx simplegitignore`)",
   "scripts": {
+    "test": "./node_modules/mocha/bin/mocha src/test/*.spec.js --exit",
     "start": "./node_modules/ts-node/dist/bin.js src/main.ts",
     "build": "./node_modules/@babel/cli/bin/babel.js -d bin --extensions \".ts\" src/main.ts",
+    "prepublishOnly": "npm test",
     "prepare": "npm run build"
   },
   "main": "bin/main.js",
@@ -15,6 +17,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-typescript": "^7.0.0",
     "@types/node": "^10.9.4",
+    "mocha": "^5.2.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },
@@ -25,5 +28,9 @@
   },
   "author": "Khang Dinh (https://kha.ngdinh.com/about-me)",
   "license": "MIT",
-  "keywords": ["gitignore", "boilerplate", "generator"]
+  "keywords": [
+    "gitignore",
+    "boilerplate",
+    "generator"
+  ]
 }
