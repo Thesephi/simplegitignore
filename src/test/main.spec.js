@@ -41,14 +41,14 @@ describe("simplegitignore", function() {
     assert(c.numLogCalls === 1,
       `console.log must be invoked exactly 1 time (${c.numLogCalls} vs 1)`)
     assert(outputFilePath === c.stdout,
-      `${c.stdout} vs ${outputFilePath}`)
+      `the resulting file's path must be output to stdout (\`${c.stdout}\` vs \`${outputFilePath}\`)`)
   })
 
   it("should log `done` as the final output to stderr", () => {
     assert(c.numErrCalls === 2,
       `console.error must be invoked exactly 2 times (${c.numErrCalls} vs 2)`)
     assert(c.stderr.endsWith("done"),
-      `the string \`done\` must be at the end of ${c.stderr}`)
+      `the string \`done\` must be at the end of \`${c.stderr}\``)
   })
 
 })
