@@ -17,14 +17,13 @@ import https from "https"
 import fs from "fs"
 import path from "path"
 import { IncomingMessage } from "http"
+import { platformGitignoreBlobUri } from "./sources"
 
 const destinationFile: string = path.join(process.cwd(), ".gitignore")
 
 // step 1: grab the file from GitHub
-// http://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore
-const sourceFileURI: string = "https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore"
 let data: string = ""
-https.get(sourceFileURI, (res: IncomingMessage): void => {
+https.get(platformGitignoreBlobUri, (res: IncomingMessage): void => {
 
   res.on("data", (chunk: any): void => {
     data += chunk
