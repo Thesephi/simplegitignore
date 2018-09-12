@@ -3,14 +3,14 @@
   "version": "0.1.5",
   "description": "generate your boilerplate gitignore the dead simple way (`npx simplegitignore`)",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha src/test/*.spec.js --exit",
-    "start": "./node_modules/ts-node/dist/bin.js src/main.ts",
-    "build": "./node_modules/@babel/cli/bin/babel.js -d bin --extensions \".ts\" src/main.ts",
+    "test": "mocha src/test/*.spec.js --exit",
+    "start": "ts-node src/main.ts",
+    "build": "babel -d tmp --extensions \".ts\" src/*.ts ; webpack tmp/main.js --mode production --target node -o bin/dist.js",
     "prepublishOnly": "npm test",
     "prepare": "npm run build"
   },
-  "main": "bin/main.js",
-  "bin": "bin/main.js",
+  "main": "bin/dist.js",
+  "bin": "bin/dist.js",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
@@ -19,7 +19,9 @@
     "@types/node": "^10.9.4",
     "mocha": "^5.2.0",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0"
   },
   "homepage": "https://github.com/Thesephi/simplegitignore",
   "repository": {

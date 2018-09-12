@@ -27,7 +27,8 @@ Temporary Items
 .apdisk
 
 node_modules
-bin/main.js
+tmp
+bin/dist.js
 
 # ignore our test .gitignore artifact
 src/test/.gitignore
