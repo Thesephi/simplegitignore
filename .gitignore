@@ -28,6 +28,7 @@ Temporary Items
 
 node_modules
 bin/main.js
+bin/sources.js
 
 # ignore our test .gitignore artifact
 src/test/.gitignore

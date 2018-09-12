@@ -1,3 +1,4 @@
 src
 tsconfig.json
 !bin/main.js
+!bin/sources.js
