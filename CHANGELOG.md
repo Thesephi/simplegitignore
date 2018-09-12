@@ -1,3 +1,8 @@
+# v0.2.0
+- added support for multiple platforms, i.e. running the script on Windows will
+generate a Windows global .gitignore, and so on
+- updated [README](README.md) to add `cli` API and other bells and whistles
+
 # v0.1.5 (not published to npm)
 - added test
 - from now on, this package can only be published to npm if all tests pass
