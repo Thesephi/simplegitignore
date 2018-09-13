@@ -1,6 +1,6 @@
 {
   "name": "simplegitignore",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "generate your boilerplate gitignore the dead simple way (`npx simplegitignore`)",
   "scripts": {
     "test": "mocha src/test/*.spec.js --exit",

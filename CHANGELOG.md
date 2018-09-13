@@ -1,3 +1,7 @@
+# v0.2.1
+- updated [README](README.md): a single typo fix and lots of good-to-read,
+among a few good-to-write stuff
+
 # v0.2.0
 - added support for multiple platforms, i.e. running the script on Windows will
 generate a Windows global .gitignore, and so on
