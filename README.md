@@ -25,7 +25,7 @@ The current version:
 - **will overwrite any existing .gitignore file** (💣 💣 💣 you've been warned!)
 - doesn't gracefully handle any network error while fetching the remote `.gitignore` file content
 - doesn't allow specifying any output destination (in other words: it **always writes to the current directory**)
-- should not be `npm install`ed or `require()`d because it will just immediately invoke and exit. In other words: **no programmatic use**! 😞
+- should not be `npm install`ed or `require()`d / `import`ed because it will just immediately invoke then exit. In other words: **no programmatic use**! 😞
 
 While pull requests are much welcomed to address the above, do keep in mind that the general idea behind this tool is to stay **dead simple** 💪
 
